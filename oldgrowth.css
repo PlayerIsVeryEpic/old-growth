@@ -1,0 +1,328 @@
+* {
+    z-index: 0;
+    font-family: "Roboto";
+    background-color: rgb(238, 216, 169);
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand"
+}
+
+/* styling */
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+.wrapper {
+    width: 80%;
+    text-align: center;
+    overflow: wrap;
+    margin: 0 auto;
+}
+
+.smallWrapper {
+    width: 50%;
+    text-align: center;
+    overflow: wrap;
+    margin: 0 auto;
+}
+
+.leftWrapper {
+    z-index: 1;
+    width: 80%;
+    height: 45vh;
+    text-align: left;
+    overflow: wrap;
+    margin: 0 auto;
+    position: static;
+    background-color: transparent;
+}
+
+.rightWrapper {
+    z-index: 1;
+    width: 80%;
+    height: 45vh;
+    text-align: right;
+    overflow: wrap;
+    margin: 0 auto;
+    position: static;
+    background-color: transparent;
+}
+
+.sideWrapperBreak {
+    background-color: transparent;
+    height: 4vh;
+}
+
+.hero {
+    position: absolute;
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.textTitle {
+    z-index: 1;
+    font-weight: 600;
+    font-size: 6vh;
+    color: black;
+}
+
+.text {
+    z-index: 1;
+    font-weight: 300;
+    font-size: 2vh;
+    color: black;
+}
+
+.footerText {
+    font-weight: 400;
+    font-size: 3vh;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    background-color: transparent;
+    height: 7vh;
+}
+
+.subtextTitle {
+    z-index: 1;
+    font-weight: 600;
+    font-size: 4vh;
+    color: black;
+    background-color: transparent;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 50.01%;
+}
+
+.subtextLeft {
+    z-index: 1;
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: black;
+    background-color: transparent;
+    text-align: left;
+    width: 50%;
+}
+
+.subtextRight {
+    float: right;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: black;
+    background-color: transparent;
+    text-align: right;
+    width: 50%;
+}
+
+.title {
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    font-weight: 700;
+    font-size: 15vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    z-index: 99;
+    top: 2vh;
+    left: 2vh;
+    width: 5vh;
+    height: 5vh;
+    position: fixed;
+}
+
+.bottomButton {
+    z-index: 10;
+    height: 80%;
+    width: 30%;
+    margin: 1vh;
+    background-color: lightgreen;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.dropdown {
+    z-index: -99;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    position: fixed;
+}
+
+.dropshadow {
+    width: 0%;
+    z-index: -99;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.dropdownitem {
+    left: 1vh;
+    padding: 3vh;
+    color: black;
+    background-color: transparent;
+    
+    /*
+    text-decoration: underline 0.05em transparent;
+    text-underline-offset: 0.5em;
+    */
+
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: text;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+
+    height: 33vh;
+    width: 100%;
+    background-color: green;
+}
+
+.buttonText {
+    background-color: transparent;
+    color: black;
+    font-size: 3vh;
+    padding: 5%;
+}
+
+.smallBreak {
+    height: 15vh;
+    width: 100%;
+    background-color: transparent
+}
+
+.medBreak {
+    height: 30vh;
+    width: 100%;
+    background-color: transparent
+}
+
+.largeBreak {
+    height: 45vh;
+    width: 100%;
+    background-color: transparent
+}
+
+.dropdownBreak {
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(157, 255, 157);
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.image {
+    height: 80%;
+    width: 45%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* font adjusts */
+
+
+
+/* background images */ 
+
+.title {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/old\ growth\ horiz.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.button {
+    background-image: url(images/menu\ button.png);
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    appearance: none;
+    padding-block: 0;
+    padding-inline: 0;
+    border-width: 0;
+}
+
+.dropdown {
+    background-color: rgb(157, 255, 157)
+}
+
+.greenBG {
+    background-color: green;
+}
+
+.lightgreenBG {
+    background-color: lightgreen;
+}
+
+.testimage {
+    background-image: url(images/test.png);
+}
+
+.ecosystem {
+    background-image: url(images/ecosystem.jpeg);
+}
+
+.climate {
+    background-image: url(images/climate\ change.jpeg);
+}
+
+.deforestation {
+    background-image: url(images/deforestation.jpeg);
+}
+
+.progress {
+    background-image: url(images/current\ progress.jpg);
+}
+
+.home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/home.jpg);
+}
+
+.mission {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/mission.jpg);
+}
+
+.action {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/action.jpg);
+}
+
+.voice {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/voice.jpg);
+}
+
+/* animations */
+
+.dropdownitem:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
