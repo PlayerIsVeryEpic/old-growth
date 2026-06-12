@@ -34,7 +34,7 @@ a {
 .largeLeftWrapper {
     z-index: 1;
     width: 80%;
-    height: min(60vh, 60vw);
+    height: min(90vh, 90vw);
     text-align: left;
     overflow: wrap;
     margin: 0 auto;
@@ -45,7 +45,7 @@ a {
 .largeRightWrapper {
     z-index: 1;
     width: 80%;
-    height: min(60vh, 60vw);
+    height: min(90vh, 90vw);
     text-align: right;
     overflow: wrap;
     margin: 0 auto;
