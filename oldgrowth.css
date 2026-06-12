@@ -1,0 +1,432 @@
+* {
+    z-index: 0;
+    font-family: "Roboto";
+    background-color: rgb(238, 216, 169);
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand"
+}
+
+/* styling */
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+.wrapper {
+    width: 80%;
+    text-align: center;
+    overflow: wrap;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.smallWrapper {
+    width: 50%;
+    text-align: center;
+    overflow: wrap;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.largeLeftWrapper {
+    z-index: 1;
+    width: 80%;
+    height: min(60vh, 60vw);
+    text-align: left;
+    overflow: wrap;
+    margin: 0 auto;
+    position: static;
+    background-color: transparent;
+}
+
+.largeRightWrapper {
+    z-index: 1;
+    width: 80%;
+    height: min(60vh, 60vw);
+    text-align: right;
+    overflow: wrap;
+    margin: 0 auto;
+    position: static;
+    background-color: transparent;
+}
+
+.leftWrapper {
+    z-index: 1;
+    width: 80%;
+    height: min(45vh, 45vw);
+    text-align: left;
+    overflow: wrap;
+    margin: 0 auto;
+    position: static;
+    background-color: transparent;
+}
+
+.rightWrapper {
+    z-index: 1;
+    width: 80%;
+    height: min(45vh, 45vw);
+    text-align: right;
+    overflow: wrap;
+    margin: 0 auto;
+    position: static;
+    background-color: transparent;
+}
+
+.sideWrapperBreak {
+    background-color: transparent;
+    height: min(4vh, 4vw);
+}
+
+.hero {
+    position: absolute;
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.textTitle {
+    z-index: 1;
+    font-weight: 600;
+    font-size: min(6vh, 6vw);
+    color: black;
+}
+
+.text {
+    z-index: 1;
+    font-weight: 300;
+    font-size: min(2vh, 2vw);
+    color: black;
+    background-color: transparent;
+}
+
+.orgText {
+    z-index: 1;
+    font-weight: 400;
+    font-size: min(3vh, 3vw);
+    color: black;
+    background-color: transparent;
+}
+
+.footerText {
+    font-weight: 400;
+    font-size: min(3vh, 3vw);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    background-color: transparent;
+    height: min(7vh, 7vw);
+}
+
+.subtextTitle {
+    z-index: 1;
+    font-weight: 600;
+    font-size: min(4vh, 4vw);
+    color: black;
+    background-color: transparent;
+    margin-top: min(3vh, 3vw);
+    margin-bottom: min(3vh, 3vw);
+    width: 50.01%;
+}
+
+.subtextLeft {
+    z-index: 1;
+    font-weight: 400;
+    font-size: min(2.5vh, 2.5vw);
+    color: black;
+    background-color: transparent;
+    text-align: left;
+    width: 50%;
+}
+
+.subtextRight {
+    float: right;
+    z-index: 1;
+    font-weight: 400;
+    font-size: min(2.5vh, 2.5vw);
+    color: black;
+    background-color: transparent;
+    text-align: right;
+    width: 50%;
+}
+
+.voiceHead {
+    z-index: 1;
+    font-weight: 600;
+    font-size: min(4vh, 4vw);
+    color: black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.subtext {
+    z-index: 1;
+    font-weight: 400;
+    font-size: min(2.5vh, 2.5vw);
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+}
+
+.title {
+    padding-top: min(20vh, 20vw);
+    padding-bottom: min(15vh, 15vw);
+    font-weight: 700;
+    font-size: min(15vh, 15vw);
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    z-index: 99;
+    top: min(2vh, 2vw);
+    left: min(2vh, 2vw);
+    width: min(5vh, 5vw);
+    height: min(5vh, 5vw);
+    position: fixed;
+}
+
+.bottomButton {
+    z-index: 10;
+    height: 80%;
+    width: 30%;
+    margin: min(1vh, 1vw);
+    background-color: lightgreen;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.dropdown {
+    z-index: -99;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    position: fixed;
+}
+
+.dropshadow {
+    width: 0%;
+    z-index: -99;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.dropdownitem {
+    left: min(1vh, 1vw);
+    padding: min(3vh, 3vw);
+    color: black;
+    background-color: transparent;
+    
+    /*
+    text-decoration: underline 0.05em transparent;
+    text-underline-offset: 0.5em;
+    */
+
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: text;
+    font-size: min(3vh, 3vw);
+    font-weight: 500;
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+
+    height: min(33vh, 33vw);
+    width: 100%;
+    background-color: green;
+}
+
+.buttonText {
+    background-color: transparent;
+    color: black;
+    font-size: min(3vh, 3vw);
+    padding: 5%;
+}
+
+.smallBreak {
+    height: min(15vh, 15vw);
+    width: 100%;
+    background-color: transparent
+}
+
+.medBreak {
+    height: min(30vh, 30vw);
+    width: 100%;
+    background-color: transparent
+}
+
+.largeBreak {
+    height: min(45vh, 45vw);
+    width: 100%;
+    background-color: transparent
+}
+
+.dropdownBreak {
+    height: min(7vh, 7vw);
+    width: 100%;
+    background-color: rgb(157, 255, 157);
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.org {
+    display: grid;
+    place-items: center;
+}
+
+.image {
+    height: 80%;
+    width: 45%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orgIcon {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* font adjusts */
+
+
+
+/* background images */ 
+
+.title {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/old\ growth\ horiz.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.button {
+    background-image: url(images/menu\ button.png);
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    appearance: none;
+    padding-block: 0;
+    padding-inline: 0;
+    border-width: 0;
+}
+
+.dropdown {
+    background-color: rgb(157, 255, 157)
+}
+
+.greenBG {
+    background-color: green;
+}
+
+.lightgreenBG {
+    background-color: lightgreen;
+}
+
+.testimage {
+    background-image: url(images/test.png);
+}
+
+.ecosystem {
+    background-image: url(images/ecosystem.jpeg);
+}
+
+.climate {
+    background-image: url(images/climate\ change.jpeg);
+}
+
+.deforestation {
+    background-image: url(images/deforestation.jpeg);
+}
+
+.progress {
+    background-image: url(images/current\ progress.jpg);
+}
+
+.home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/home.jpg);
+}
+
+.mission {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/mission.jpg);
+}
+
+.action {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/action.jpg);
+}
+
+.voice {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(images/voice.jpg);
+}
+
+.sierra {
+    background-image: url(images/sierra.png);
+}
+
+.afa {
+    background-image: url(images/afa.webp);
+}
+
+.wilderness {
+    background-image: url(images/wilderness.webp);
+}
+
+.carving {
+    background-image: url(images/carving.jpg);
+}
+
+.simard {
+    background-image: url(images/simard.jpg);
+}
+
+.website {
+    background-image: url(images/website.png);
+}
+
+.missionPage {
+    background-image: url(images/mission\ page.jpg);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1/1;
+}
+/* animations */
+
+.dropdownitem:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
