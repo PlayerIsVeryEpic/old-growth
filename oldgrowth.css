@@ -67,7 +67,7 @@ a {
 .rightWrapper {
     z-index: 1;
     width: 80%;
-    height: min(45vh, 35vw);
+    height: max(45vh, 35vw);
     text-align: right;
     overflow: wrap;
     margin: 0 auto;
